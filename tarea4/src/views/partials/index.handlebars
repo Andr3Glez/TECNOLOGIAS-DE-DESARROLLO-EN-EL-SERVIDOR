@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        button[type="submit"] {
+            background-color: #28a745; 
+            color: #fff; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            border: none; 
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #218838; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <h1>Aplicacion de Busqueda de Noticias</h1>
+    <p>Esta es una aplicación, la cual su uso es para buscar y listar noticias, en base en la API de  https://newsapi.orgLinks</p>
+    <button type="submit" onclick="window.location.href='/searchs'">Ir a la página de búsqueda</button>
+    <button type="submit" onclick="window.location.href='/register'">Registrarse</button>
+    <button type="submit" onclick="window.location.href='/login'">Iniciar sesión</button>
+    </div>
+</body>
+</html>

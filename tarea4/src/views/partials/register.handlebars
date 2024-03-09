@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrar usuario</title>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <style>
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            margin-top: 20px; 
+        }
+        form {
+            margin-top: 20px;
+        }
+        button[type="submit"] {
+            background-color: #28a745;
+            color: #fff; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            border: none; 
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+        button[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registrar usuario</h2>
+        <form action="/register" method="post">
+            <div>
+                <label for="fullname">Nombre completo:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <br>  
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br> 
+            <div>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br> 
+            <div>
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">Estoy de acuerdo con crear una cuenta</label>
+            </div>
+            <br> 
+            <button type="submit" onclick="window.location.href='/searchs'">Registrarse</button>
+        </form>
+    </div>
+</body>
+</html>
